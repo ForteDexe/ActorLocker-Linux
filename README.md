@@ -1,4 +1,4 @@
-# Actor Locker
+# Actor Locker (Linux Build)
 
 ## Description
 Simple plugin that lets you lock actor in the Level Editor so you can't move or select it.
