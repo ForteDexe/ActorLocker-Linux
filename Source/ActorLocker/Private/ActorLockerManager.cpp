@@ -374,7 +374,7 @@ void UActorLockerManager::OnInputEvent(const FSlateDebuggingInputEventArgs& Slat
 	}
 
 	const auto Widget = SlateDebuggingInputEventArgs.HandlerWidget;
-	if (!Widget.IsValid() || Widget->GetType() != TEXT("SSceneOutlinerTreeRow") && Widget->GetType() != TEXT("SSceneOutlinerTreeView"))
+	if (!Widget.IsValid() || (Widget->GetType() != TEXT("SSceneOutlinerTreeRow") && Widget->GetType() != TEXT("SSceneOutlinerTreeView"))) //fix for clang 18.1.0
 	{
 		return;
 	}
